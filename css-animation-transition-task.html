@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and transition</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+
+        .parent h1 {
+            font-weight: bold;
+            font-size: 25pt;
+            color: yellow;
+            text-shadow: 0px 0px 10px red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10%;
+        }
+
+        .card-parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 70px;
+        }
+
+        .card1 {
+            background-color: blueviolet;
+            width: 300px;
+            color: white;
+            border: 1px solid blue;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 18pt;
+            transform: scale(1.1);
+
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            animation: myanim 4s linear infinite;
+        }
+
+        @keyframes myanim {
+            50% {
+                transform: translateY(-10px);
+                transform: translateY(10px);
+            }
+        }
+
+        .button {
+            width: 60%;
+            padding: 13px;
+            background-color: tomato;
+            font-size: 1.3rem;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.4rem;
+            animation: button 2s linear infinite alternate-reverse;
+            box-shadow: 0px 0px 6px lightcyan;
+        }
+
+        @keyframes button {
+            50% {
+                box-shadow: 0px 0px 10px lightcyan;
+                transition: all 2s linear;
+            }
+
+            100% {
+                box-shadow: 0px 0px 16px lightcyan;
+                transition: all 2s linear;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1>THOSE WHO SUBMIT ASSINGMENT BEFORE SOLUTION <br><br>
+            GREAT WORK
+            KEEP IT UP
+        </h1><br><br>
+    </div>
+    <div class="card-parent">
+        <div class="card1">
+            <img src="./images/logo.png" alt="">
+            <h3>Shoaib Ahmed</h3>
+            <p style="color: lightgray;">Second position</p>
+            <a href="" class="button">VIEW PROFILE</a>
+        </div>
+
+        <div class="card1">
+            <img src="./images/logo.png" alt="">
+            <h3>Shoaib Ahmed</h3>
+            <p style="color: lightgray;">Second position</p>
+            <a href="" class="button">VIEW PROFILE</a>
+        </div>
+
+        <div class="card1">
+            <img src="./images/logo.png" alt="">
+            <h3>Shoaib Ahmed</h3>
+            <p style="color: lightgray;">Second position</p>
+            <a href="" class="button">VIEW PROFILE</a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
