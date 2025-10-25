@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid assignment</title>
+    <style>
+        body{
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 0%;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(8,1fr);
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .Header{
+            background-color: blue;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 11px;
+            height: 80px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .article1, .article2, .article3, .article4, .article5, .article6 {
+            background-color:lightgrey;
+            color: #000;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 11px;
+            grid-column-start: 1;
+            grid-column-end: 3; 
+            height: 70px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        .aside{
+            grid-column-start: 3; 
+            grid-column-end: 4;   
+            grid-row-start: 2;
+            grid-row-end: 8; 
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .footer{
+            background-color: darkorange;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 11px;
+            height: 80px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="Header">Header</div>
+        <div class="article1">Article 1</div>
+        <div class="article2">Article 2</div>
+        <div class="article3">Article 3</div>
+        <div class="article4">Article 4</div>
+        <div class="article5">Article 5</div>
+        <div class="article6">Article 6</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+    
+</body>
+</html>
