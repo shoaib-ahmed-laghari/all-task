@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML task</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 6px 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Georgia, serif;
+            text-decoration: underline;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+th, td {
+  border: 1px solid black;
+  padding: 5px 10px;
+  height: 30px;
+}
+th {
+  background-color: #f0f0f0;
+}
+h2 {
+  text-align: center;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Using Rows Span</h2>
+    <table>
+        <tr>
+            <td rowspan="3">User Info</td>
+            <td>1</td>
+            <td>John Carter</td>
+            <td>johncarter@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter Parker</td>
+            <td>PeterParker@gmail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John Rambo</td>
+            <td>johnRambo@gmail.com</td>
+        </tr>
+    </table>
+
+    <h2>Using Colspan</h2>
+    <table>
+        <tr>
+            <td colspan="4">User Info</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Carter</td>
+            <td>JohnCarter@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter Parker</td>
+            <td>PeterParker@gmail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John Rambo</td>
+            <td>johnRambo@gmail.com</td>
+        </tr>
+    </table>
+
+    <h2>Fruit Juice Drinks And Meals</h2>
+    <table>
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="3">Fruit Juice Drinks</td>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>Orange</td>
+            <td>ScrewDriver</td>
+        </tr>
+        <tr>
+            <td>Breakfast</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Lunch</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Dinner</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="User Icon">
+
+    <form>
+        <label><b>UserName</b></label><br>
+        <input type="text" placeholder="Enter User Name"><br>
+        <label><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password"><br>
+        <button type="submit">Login</button>
+        <button type="reset">Cancel</button><br><br>
+        <input type="checkbox"> Remember Me<br>
+        Forget <a href="#">Password?</a>
+    </form>
+    <br>
+    <h2>Class Time Table</h2>
+<table>
+  <tr>
+    <th></th>
+    <th>09:00-10:00AM</th>
+    <th>10:00-11:00AM</th>
+    <th>11:00-11:30AM</th>
+    <th>11:30-12:30PM</th>
+    <th>12:30-01:30PM</th>
+    <th>01:30-02:00PM</th>
+    <th>02:00-03:00PM</th>
+    <th>03:00-04:00PM</th>
+    <th>04:10-05:25PM</th>
+    <th>05:30-06:30PM</th>
+    <th>06:50-07:50PM</th>
+    <th>07:50-08:50PM</th>
+  </tr>
+  <tr>
+    <th>Mo</th>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td colspan="2">Introduction To Programming</td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <th>Tu</th>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td colspan="2">Introduction To Programming</td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <th>We</th>
+    <td></td><td colspan="3">Web Engineering</td><td></td><td></td><td></td><td></td>
+    <td colspan="2">Introduction To Programming</td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <th>Th</th>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td colspan="2">Introduction To Programming</td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <th>Fr</th>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td colspan="2">Introduction To Programming</td>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <th>Sa</th>
+    <td></td><td colspan="3">Web Engineering</td><td></td><td></td><td></td><td colspan="2">Web Engineering</td><td></td><td></td><td></td>
+  </tr>
+</table>
+
+
+
+</body>
+
+</html>
