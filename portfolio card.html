@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            background-color: lightskyblue;
+        }
+
+        .parent {
+            width: 400px;
+            height: 450px;
+            background-color: aliceblue;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .child>img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 12px;
+            animation: rotate 2s linear infinite alternate-reverse;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translateY(-10px);
+            }
+
+            to {
+                transform: translateY(10px);
+            }
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        .text {
+            color: green;
+            font-weight: bold;
+            animation: deg 2s linear normal infinite;
+            font-size: 20pt;
+        }
+
+        .text-parent {
+            display: flex;
+            gap: 5px;
+            font-size: 20pt;
+        }
+        @keyframes deg {
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes para {
+            50%{
+                color: lightgray;
+            }
+            75%{
+                color: aqua;
+            }
+            100%{
+                color: white;
+            }
+
+        }
+        .animate{
+            animation: para 2s linear infinite alternate-reverse;
+        }
+        .button {
+            background-color: skyblue;
+            border-radius: 20px;
+            width: 100px;
+            height: 30px;
+            text-decoration: none;
+            padding: 8px;
+            color: #fff;
+            font-weight: bold;
+            
+        }
+        #botton {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 45px;
+            animation: animation 3s linear infinite ;
+        }
+        @keyframes animation {
+             50%{
+                box-shadow:0px 0px 5px 5px rgb(155, 232, 155);
+            }
+            100%{
+                box-shadow:0px 0px 8px 10px rgb(195, 241, 195);
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <div class="child">
+
+            <img src="./images/my-image.jpeg" alt="">
+            <h3>Shoaib Ahmed</h3>
+            <p class="animate">Full Stack Developer</p>
+            <br><br>
+            <div class="text-parent">
+                <div class="text">Frontend</div>
+                <div class="text">Database</div>
+            </div><br>
+            <div class="text">Backend</div>
+             <a href="" class="button" id="botton">Hire Me</a>
+        </div>
+       
+
+    </div>
+
+</body>
+
+</html>
